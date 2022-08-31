@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from "./AppComponent";
 import { TitleComponent } from './title/title.component';
+import { DataBidingComponent } from './data-biding/data-biding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleComponent
+    TitleComponent,
+    DataBidingComponent
   ],
   imports: [
     BrowserModule,
