@@ -9,6 +9,7 @@ export class TitleComponent implements OnInit {
   public title : string = "bem vindo";
   public texto : string = "hello word";
   public ola  = "1983";
+  
   constructor() { }
 
   ngOnInit(): void {
