@@ -3,6 +3,12 @@
 <p> {{ nome}} tem mais de 39 anos?</p>
 <p>{{idade > 39}}</p>
 
-<p>quanto é {{idade}} + 1 ?</p>
-<p> {{idade + 1 }}</p>
+<p>quanto é {{idade}} + {{maisUm}} ?</p>
+<p> {{idade + maisUm }}</p>
 
+<hr>
+
+<h2>proprety blinding</h2>
+
+<button [disabled]="negar">apertar</button>
+<img [src]="srcImage" [alt]="imagem" [title]="teste">
