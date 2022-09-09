@@ -9,6 +9,15 @@ export class DiretivasEstruturaisComponent implements OnInit {
 
   public condition : boolean = true;
   public conditionClick : boolean = true;
+  public list: Array <{ nome: string, idade : number }> = [
+    { nome: "roberto ", idade: 39},
+    { nome: "bruno", idade: 24 },
+    { nome: "sheila", idade: 45},
+    
+  
+  
+  
+  ];
   constructor() { }
 
   ngOnInit(): void {
@@ -21,9 +30,9 @@ export class DiretivasEstruturaisComponent implements OnInit {
       }
 
     }, 2000)
-
-
   }
+
+    
 
    
   public desaparecer (){ 
@@ -32,5 +41,16 @@ export class DiretivasEstruturaisComponent implements OnInit {
   } else{
       this.conditionClick = true;
     }
+     } 
+
+    
+     public onclickAddList() {
+      this.list.push({nome:"roberto" ,  idade:39});
     }
- }
+
+public  onClickEventList (event:MouseEvent )  {
+  console.log(event);
+} 
+
+  }
+ 
