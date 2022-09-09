@@ -13,11 +13,12 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: "roberto ", idade: 39},
     { nome: "bruno", idade: 24 },
     { nome: "sheila", idade: 45},
-    
-  
-  
-  
-  ];
+    ];
+    public ngSwitch: string ="ngSwitch";
+    public nome: string ='roberto';
+    public ngFor: String ="ngFor";
+    public ngClass : string ="ngClass";
+
   constructor() { }
 
   ngOnInit(): void {
