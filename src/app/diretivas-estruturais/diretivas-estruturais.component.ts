@@ -17,7 +17,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
     public ngSwitch: string ="ngSwitch";
     public nome: string ='roberto';
     public ngFor: String ="ngFor";
-    public ngClass : string ="ngClass";
+    
 
   constructor() { }
 
