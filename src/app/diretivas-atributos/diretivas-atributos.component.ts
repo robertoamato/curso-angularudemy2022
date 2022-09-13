@@ -11,8 +11,10 @@ export class DiretivasAtributosComponent implements OnInit {
   public ngStyle : string ="ngStyle";
   public heightPx: string ="heighPx";
   public backgroundColor = "backgroundColor"
-  public list: Array <{nome: string }> = [];
+  public list: Array <{nome: string }> = [{nome:"roberto amato"}];
   public nome: string ="";
+  public pipe: string ="PIPE";
+  public date :Date = new Date();
   constructor() { }
 
   ngOnInit(): void {
@@ -39,6 +41,10 @@ export class DiretivasAtributosComponent implements OnInit {
   public salvar() {
     this.list.push({ nome: this.nome });
     this.nome ="";
+    
+  }
+    public PIPE() {
+      this.backgroundColor="blue";
     
   }
 
